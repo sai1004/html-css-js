@@ -23,19 +23,13 @@
       </ul>
     </nav>
 
-    <script>
+    <script>      
       var menu = document.getElementById("menu");
-
       menu.addEventListener("click", collapse);
-
       function collapse(e) {
-        e.target.classList.toggle('active');
+        document.querySelector("ul").classList.toggle("active");
         console.log(e.target.classList);
       }
-
-      //   menu.addEventListener('click', (e) => {
-      //     document.querySelector('ul').classList.toggle('active');
-      //   })
     </script>
   </body>
 </html>
