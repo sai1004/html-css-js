@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #0f0f0f;
+        color: #fff;
+        font-family: sans-serif;
+      }
+      .nav-layout {
+        background-color: blueviolet;
+        height: 100px;
+        border-bottom-right-radius: 1000px;
+        border-bottom-left-radius: 1000px;
+      }
+      nav {
+        color: #fff;
+        text-align: center;
+      }
+      nav li {
+        display: inline-block;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      nav li:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #0f0f0f;
+      }
+      .main {
+        height: 500px;
+        margin-left: 85px;
+        margin-right: 86px;
+      }
+      .piller-left {
+        float: left;
+        height: 100vh;
+        background: grey;
+        /* background: burlywood; */
+        width: 80px;
+      }
+      .piller-right {
+        float: right;
+        height: 100vh;
+        background: grey;
+        /* background: burlywood; */
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-layout">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Blog</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="piller-left"></div>
+
+      <div class="piller-right"></div>
+    </div>
+  </body>
+</html>
