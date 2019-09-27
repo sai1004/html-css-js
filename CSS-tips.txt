@@ -1,0 +1,17 @@
+CSS Variables for beginners
+
+:root {
+    --primary-color: #f03d06;
+  }
+  .main-header {
+      color: var(--primary-color);
+        }
+          .main-footer {
+              background-color: var(--primary-color);
+                }
+To declare a CSS variable we will have to add a double dash before the name of that variable.
+
+To access a CSS variable try:
+var(--your-variable-name)
+
+CSS variables declared in :root will make sure that all selectors can gain access to them
