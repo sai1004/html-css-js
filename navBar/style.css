@@ -44,8 +44,28 @@ ul li a{
     color:#fff;
     font-size: 30px;
     display: none;
+
+}
+div i{
+    cursor: pointer;
+}
+.round{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width:100px;
+    text-align: center
 }
 
+.round:hover{
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.5);
+    transform: rotateX(150deg);
+
+}
 @media (max-width:768px){
     .toggle{
         display: block;
@@ -57,6 +77,8 @@ ul li a{
     ul li{
         display: block;
         text-align: center;
+        border-bottom: #fff solid 1px;
+        
     }
     .active{
         display: block;

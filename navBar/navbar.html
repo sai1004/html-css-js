@@ -23,13 +23,20 @@
       </ul>
     </nav>
 
+    <section>
+
+      <div class="round"> <p>hey</p> </div>
+
+    </section>
     <script>      
       var menu = document.getElementById("menu");
       menu.addEventListener("click", collapse);
       function collapse(e) {
         document.querySelector("ul").classList.toggle("active");
         console.log(e.target.classList);
+   
       }
+   
     </script>
   </body>
 </html>
