@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        font-family: sans-serif;
-      }
-      .containter {
-        margin-right: 40px;
-        margin-left: 40px;
-      }
-      .grid-container-main {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-gap: 50px;
-      }
-      .grid-container-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-      .column-p-1 {
-        background-color: rgb(200, 150, 190);
-      }
-      .column-p-2 {
-        background-color: green;
-      }
-      .column-p-3 {
-        background-color: cornflowerblue;
-      }
-      @media screen and (max-width: 770px) {
-        .grid-container-main {
-          grid-template-columns: 1fr;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        .grid-container-2 {
-          grid-template-columns: 1fr;
-        }
-      }
-      @media screen and (max-width: 992px) {
-        body {
-          background-color: blue;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header align="center"><h3>CSS GRID</h3></header>
+    <head>
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+            .containter {
+                margin-right: 40px;
+                margin-left: 40px;
+            }
+            .grid-container-main {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 50px;
+            }
+            .grid-container-2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .column-p-1 {
+                background-color: rgb(200, 150, 190);
+            }
+            .column-p-2 {
+                background-color: green;
+            }
+            .column-p-3 {
+                background-color: cornflowerblue;
+            }
+            @media screen and (max-width: 770px) {
+                .grid-container-main {
+                    grid-template-columns: 1fr;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .grid-container-2 {
+                    grid-template-columns: 1fr;
+                }
+            }
+            @media screen and (max-width: 992px) {
+                body {
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header align="center"><h3>CSS GRID</h3></header>
 
-    <div class="container">
-      <div class="grid-container-main">
-        <div class=" column-p-1 order-1">
-          <div class="grid-container-2">
-            <div class="part-1">
-              <h6 class="text-center bg-primary">Customer Details</h6>
-              <div class="row">
-                <div class="col">
-                  <p>part-1</p>
+        <div class="container">
+            <div class="grid-container-main">
+                <div class="column-p-1 order-1">
+                    <div class="grid-container-2">
+                        <div class="part-1">
+                            <h6 class="text-center bg-primary">Customer Details</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <p>part-1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part-2">
+                            <h6 class="text-center bg-primary">Booking Details</h6>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <p>Check-in Date</p>
+                                    <p>Check-out Date</p>
+                                    <p>Booking Date</p>
+                                    <p>Days</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <p>hey you crazy</p>
+                                    <p>hey you crazy</p>
+                                    <p>hey you crazy</p>
+                                    <p>hey you crazy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="column-p-2 order-3">Col-2</div>
+                <div class="column-p-3 order-2">Col-3</div>
             </div>
-            <div class="part-2">
-              <h6 class="text-center bg-primary">Booking Details</h6>
-              <div class="row">
-                <div class="col-md-6 col-sm-6 col-6">
-                  <p> Check-in Date</p>
-                  <p> Check-out Date</p>
-                  <p> Booking Date</p>
-                  <p> Days</p>
-                </div>
-                <div class="col-md-6 col-sm-6 col-6">
-              <p> hey you crazy </p>
-              <p> hey you crazy </p>
-              <p> hey you crazy </p>
-              <p> hey you crazy </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class=" column-p-2 order-3 ">Col-2</div>
-        <div class=" column-p-3 order-2">Col-3</div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
