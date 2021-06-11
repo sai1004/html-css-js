@@ -1,0 +1,82 @@
+
+$red: red;
+
+.btn-card {
+    color: $red;
+}
+
+// sudo elements
+
+.btn-card {
+    &:hover {
+        color: cornflowerblue;
+    }
+
+    &:focus {
+        background-color: crimson;
+    }
+}
+
+// mixin
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: coral;
+}
+
+.cat {
+    @include flex-row;
+}
+
+.aside {
+    @include flex-row;
+}
+
+// mixin functions
+
+@mixin cool-btn($color, $bgColor) {
+    display: flex;
+    color: $color;
+    background-color: $bgColor;
+}
+
+.btn-orange {
+    @include cool-btn(white, orange);
+}
+
+// conditions
+$light-bg: white;
+
+$dark-bg: grey;
+
+@mixin theme-colors($theme) {
+    @if $theme == "light" {
+        background-color: $light-bg;
+    } @else {
+        background-color: $dark-bg;
+    }
+}
+
+// loops
+
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+    .icon-#{$size} {
+        font-size: $size;
+    }
+}
+
+// mixin functions
+
+@function sum($numbers) {
+    $sum: 0;
+    @each $number in $numbers {
+        $sum: $sum + $number;
+    }
+
+    @return $sum;
+}
