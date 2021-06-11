@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Land Page</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            }
+            .spacer {
+                flex: 1 1 auto;
+            }
+
+            .nav__bar {
+                padding: 10px;
+                display: flex;
+                background-color: blueviolet;
+                box-shadow: 0px 1px 1px 1px rgba(210, 210, 210, 0.5);
+            }
+
+            .nav__item {
+                margin: 2px;
+                width: 80px;
+                background-color: blueviolet;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            .banner {
+                height: 420px;
+                background-color: cadetblue;
+                width: 100%;
+            }
+
+            .banner__row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 420px;
+            }
+
+            .banner__img {
+                width: 50%;
+                text-align: center;
+            }
+
+            .banner__text {
+                width: 50%;
+            }
+
+            .course__section {
+                padding: 140px 0px 50px 0px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .course__card {
+                height: 460px;
+                width: 350px;
+                background-color: coral;
+                margin: 10px;
+            }
+
+            .middle {
+                transform: translate(-00%, -20%);
+                perspective: 1502px;
+            }
+
+            p {
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+
+            .nav__items_sm-screen {
+                display: none;
+            }
+
+            .hamburger {
+                background-color: white;
+                height: 26px;
+                width: 40px;
+                text-align: center;
+                padding-top: 2px;
+                cursor: pointer;
+                border: none;
+            }
+
+            .line {
+                background-color: black;
+                width: 80%;
+                height: 2px;
+                margin: 4px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 600px) {
+                .banner__img {
+                    width: 100%;
+                }
+
+                .banner__text {
+                    width: 100%;
+                }
+
+                .nav__items_bg-screen {
+                    display: none;
+                }
+
+                .hamburger:focus {
+                    background-color: brown !important;
+                }
+
+                .hamburger .nav__items_sm-screen {
+                    display: block;
+                    height: 100vh;
+                    background-color: darkgray;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="nav__bar">
+                <div>
+                    <h2>Logo</h2>
+                </div>
+                <span class="spacer"></span>
+                <div class="nav__items_bg-screen">
+                    <button class="nav__item">Home</button>
+                    <button class="nav__item">About</button>
+                    <button class="nav__item">Contact</button>
+                    <button class="nav__item">Products</button>
+                </div>
+                <button class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+            </nav>
+
+            <div class="nav__items_sm-screen">
+                <button class="nav__item">Home</button>
+                <button class="nav__item">About</button>
+                <button class="nav__item">Contact</button>
+                <button class="nav__item">Products</button>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="banner__row">
+                <div class="banner__img">
+                    <h1>klajsdlsakd</h1>
+                </div>
+
+                <div class="banner__text">
+                    <h1>Welcome to online courses</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="course__section">
+            <div class="course__card"></div>
+            <div class="course__card middle"></div>
+            <div class="course__card"></div>
+        </section>
+
+        <section>
+            <p>
+                The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed
+                her in a languid, sleepy voice.
+            </p>
+        </section>
+
+        <section></section>
+    </body>
+</html>

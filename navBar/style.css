@@ -1,86 +1,80 @@
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-
 }
 
-nav{
-    width:100%;
+nav {
+    width: 100%;
     background: blueviolet;
     color: white;
 }
 
-ul{
-    width:80%;
+ul {
+    width: 80%;
     margin: 0 auto;
     padding: 0;
 }
 
-ul li{
+ul li {
     list-style: none;
     display: inline-block;
     padding: 20px;
     color: aliceblue;
 }
 
-ul li:hover{
+ul li:hover {
     cursor: pointer;
     background-color: crimson;
- 
 }
 
-ul li a{
-   text-decoration: none; 
-   color: white;
+ul li a {
+    text-decoration: none;
+    color: white;
 }
 
-.toggle{
-
+.toggle {
     width: 100%;
     padding: 10px 20px;
     text-align: right;
     box-sizing: border-box;
-    color:#fff;
+    color: #fff;
     font-size: 30px;
     display: none;
-
 }
-div i{
+div i {
     cursor: pointer;
 }
-.round{
+.round {
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 100px;
-    width:100px;
-    text-align: center
+    width: 100px;
+    text-align: center;
 }
 
-.round:hover{
+.round:hover {
     border: none;
     border-radius: 50%;
-    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.5);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
     transform: rotateX(150deg);
-
 }
-@media (max-width:768px){
-    .toggle{
+@media (max-width: 768px) {
+    .toggle {
         display: block;
     }
-    ul{
+    ul {
         width: 100%;
         display: none;
     }
-    ul li{
+    ul li {
         display: block;
         text-align: center;
         border-bottom: #fff solid 1px;
-        
     }
-    .active{
+    .active {
         display: block;
     }
 }
